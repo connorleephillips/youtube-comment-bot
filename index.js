@@ -61,9 +61,8 @@ await page.evaluate(_ => {
 
   await navigationPromise;
 
-  // Write your code here
 
-  const distance = 800; // should be less than or equal to window.innerHeight
+  const distance = 800; 
   const delay = 2;
   
     for (let i = 1; i < correctComments; i++) {
@@ -82,8 +81,7 @@ await page.evaluate(_ => {
       await page.waitForTimeout(delay);
   
       if (commentText) {
-        // write each comment to DB or file
-        // or batch the for processing later
+       
         console.log(`${author}: ${commentText}`);
         comments.push(author + "¬¬¬" + stripped +"¬¬¬");
   
